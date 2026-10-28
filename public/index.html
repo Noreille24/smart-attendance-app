@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance Interface</title>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">SmartAttendance</div>
+        <div class="user-profile">
+            <span id="student-name">Student Portal</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Dashboard View (Active Classes) -->
+        <section id="dashboard-view" class="view-section active">
+            <h2>Active Class Sessions</h2>
+            <p class="subtitle">Select your active session to record attendance</p>
+
+            <div class="class-card">
+                <div class="class-info">
+                    <h3 class="class-title">Human Computer Interaction (CS411)</h3>
+                    <p>Instructor: Prof. Marlon Magtibay</p>
+                    <p>Time: 3:00 PM - 4:00 PM  | Room: B101</p>
+                </div>
+                <!-- Large, high-contrast action button following Fitts' Law -->
+                <button id="check-in-btn" class="primary-btn">CHECK IN NOW</button>
+            </div>
+        </section>
+
+        <!-- Success Confirmation View (Hidden by default)-->
+        <section id="success-view" class="view-section hidden">
+            <div class="success-box">
+                <div class="success-icon">/</div>
+                <h2>SUCCESS!</h2>
+                <p>Attendance recorded successfully for:</p>
+                <p class="highlight-text" id="confirmed-class">Human Computer Interaction (CS411)</p>
+                <p class="timestamp" id="timestamp-text">Timestamp: October 29 ,2026 - 3:02 PM</p>
+
+                <div class="action-group">
+                    <button id="back-home-btn" class="secondary-btn">Back to Home</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
