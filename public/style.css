@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.view-section {
+    display: none;
+}
+
+.view-section.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+/* Class Card */
+.class-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.class-info h3 {
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.class-info p {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Primary Button (Fitts' Law: Large and prominent) */
+.primary-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Success Card View */
+.success-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #22c55e;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #0f172a;
+    margin: 0.5rem 0;
+}
+
+.timestamp {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.secondary-btn {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.secondary-btn:hover {
+    background-color: #cbd5e1;
+}
+
+.hidden {
+    display: none;
+}
